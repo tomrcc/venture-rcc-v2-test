@@ -22,7 +22,7 @@
     {% include 'partials/nav/navigation.html' %}
     {% assign rosey_slug = page.url | replace: '/', '' %}
     {% if rosey_slug == '' %}{% assign rosey_slug = 'index' %}{% endif %}
-    <main id="main" data-rosey-root="{{ rosey_slug }}">
+    <main id="main" data-rosey-root="{{ rosey_slug }}" data-rcc-verbose>
       {% bookshop_include "hero" hero: hero title: title permalink: permalink %}
 
       {% bookshop_include "page" content_blocks: content_blocks %}
