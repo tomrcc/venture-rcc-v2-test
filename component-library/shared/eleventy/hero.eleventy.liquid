@@ -1,3 +1,4 @@
+<div data-rosey-ns="hero">
 {% if hero %}
     {% bookshop {{hero._bookshop_name}} bind:hero %}
 {% elsif permalink != "/components/" %}
@@ -12,3 +13,4 @@
     {% assign default_hero = default_hero | ymlify %}
     {% bookshop "sections/hero--simple" bind: default_hero %}
 {% endif %}
+</div>

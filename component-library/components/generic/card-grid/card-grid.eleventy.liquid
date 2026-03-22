@@ -16,8 +16,10 @@
 
     {% if content.grid_items %}
       <div class="{{c}}__grid">
-        {% for item in content.grid_items %}          
-          {% bookshop "generic/card" bind:item card_color_group:styles.card_color_group %}
+        {% for item in content.grid_items %}
+          <div data-rosey-ns="{{ forloop.index0 }}">
+            {% bookshop "generic/card" bind:item card_color_group:styles.card_color_group %}
+          </div>
         {% endfor %}
       </div>
     {% endif %}
@@ -25,7 +27,9 @@
     {% if content.buttons %}
       <div class="{{c}}__buttons">
         {% for button in content.buttons %}
-          {% bookshop "generic/button" bind:button disabled:false arrow:button.arrow %}
+          <div data-rosey-ns="button-{{ forloop.index0 }}">
+            {% bookshop "generic/button" bind:button disabled:false arrow:button.arrow %}
+          </div>
         {% endfor %}
       </div>
     {% endif %}

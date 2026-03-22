@@ -21,7 +21,7 @@
         {% if content.description %}<div class="{{c}}__content">{% bookshop "generic/text-block" text:content.description %}</div>{% endif %}
         {% if content.buttons and content.buttons.size > 0 %}
             {% for button in content.buttons %}
-                <div class="{{ c }}__button">
+                <div class="{{ c }}__button" data-rosey-ns="button-{{ forloop.index0 }}">
                     {% bookshop "generic/button" bind:button %}
                 </div>
             {% endfor %}            

@@ -1,0 +1,299 @@
+---
+description: Core context about the Rosey / RCC / CloudCannon multilingual stack used in this project
+alwaysApply: true
+---
+
+# Rosey + RCC + CloudCannon Multilingual Stack
+
+This is a set of files that help agents make a site multilingual using Rosey, the Rosey CloudCannon Connector, and CloudCannon. This should be generic enough to help future users with making their own sites multilingual.
+
+## The Stack
+
+### Rosey (npm: `rosey`)
+
+An open-source, framework-agnostic translation tool that works on **built HTML output** (not source files).
+
+- Scans the build output for elements with `data-rosey` attributes
+- Generates `rosey/base.json` containing all translatable keys and their original text
+- Builds translated copies of the site from locale JSON files (e.g., `rosey/locales/fr.json`)
+- Docs: https://rosey.app
+
+### RCC v2 (rosey-cloudcannon-connector)
+
+A client-side script that bridges Rosey translations with CloudCannon's Visual Editor, enabling inline locale editing.
+
+- **Source repo (v2, in development):** https://github.com/tomrcc/rcc-v2
+- **Install:** `npm install rosey-cloudcannon-connector@github:tomrcc/rcc-v2`
+- Auto-detects all `data-rosey` elements, injects a floating locale switcher in the Visual Editor
+- Creates inline editors connected to locale data files via the CloudCannon JS API
+- Includes stale translation detection (amber border when source text changes after translation)
+- **Docs** (in the rcc-v2 repo): `docs/getting-started.md`, `docs/tagging-content.md`, `docs/migration-from-v1.md`
+
+### CloudCannon
+
+The CMS that manages locale files through `data_config` entries in `cloudcannon.config.yml`.
+
+## Key Data Attributes
+
+| Attribute | Where | Purpose |
+|---|---|---|
+| `data-rosey="{key}"` | Translatable elements | Rosey translation key |
+| `data-rosey-root="{prefix}"` | Parent elements | Sets root namespace prefix (stops upward traversal) |
+| `data-rosey-ns="{segment}"` | Parent elements | Adds a namespace segment to child keys |
+| `data-rcc` | Container element | Overrides the snapshot boundary (defaults to `<main>` if absent) |
+| `data-rcc-exclude="de,es"` | Container element | Comma-separated locale codes to hide from the switcher on this page |
+| `data-rcc-ignore` | Translatable elements | Opts element out of locale switching |
+| `data-rcc-verbose` | Any element | Enables verbose console logging |
+
+## Key Namespacing
+
+Rosey keys are built by walking up the DOM from the element:
+
+```html
+<main data-rosey-root="index">
+  <section data-rosey-ns="hero">
+    <h1 data-rosey="title">Welcome</h1>
+  </section>
+</main>
+```
+
+Resolved key: `index:hero:title`. Setting `data-rosey-root=""` resets the namespace.
+
+## Locale File Format
+
+```json
+{
+  "index:hero:title": {
+    "original": "Welcome to Sendit",
+    "value": "Bienvenue chez Sendit",
+    "_base_original": "Welcome to Sendit"
+  }
+}
+```
+
+- `original` -- source text when translation was last acknowledged
+- `value` -- the translation
+- `_base_original` -- current source text from `base.json` (updated by `write-locales`)
+
+## Auto-Derive Pattern for Building Blocks
+
+For component-heavy sites where core building blocks (Heading, Text, Button, etc.) already use CloudCannon's `data-prop` for inline editing, auto-derive `data-rosey` from `data-prop` instead of tagging every instance manually:
+
+```astro
+---
+const { "data-prop": customDataProp, "data-rosey": roseyProp, ...htmlAttributes } = Astro.props;
+const effectiveDataProp = customDataProp ?? (editable ? "text" : null);
+const effectiveDataRosey = roseyProp === false ? null : (roseyProp ?? effectiveDataProp ?? null);
+const roseyAttributes = effectiveDataRosey ? { "data-rosey": effectiveDataRosey } : {};
+---
+<span class="inner-text" {...textDataAttributes} {...roseyAttributes}>...</span>
+```
+
+Key points:
+- **Destructure `data-rosey` from props** — prevents it leaking into `...htmlAttributes` and landing on the wrong element
+- **`data-rosey={false}` opts out** — use on instances that should not be translated (proper nouns, names)
+- **`editable={false}` components** need explicit `data-rosey="key"` since auto-derive depends on `data-prop`
+
+## RCC Import Pattern
+
+Lazy-load RCC only inside the CloudCannon Visual Editor:
+
+```html
+<script>
+  if (window?.inEditorMode) {
+    import("rosey-cloudcannon-connector");
+  }
+</script>
+```
+
+## Snapshot Boundary
+
+The RCC needs to know which part of the page contains translatable content. It clones this container when switching locales, stripping CloudCannon editing infrastructure from the clone.
+
+- **Default:** `<main>`
+- **Override:** Add `data-rcc` to a custom container element
+- Lookup order: `[data-rcc]` then `<main>`. If neither exists, the connector logs a warning and does nothing.
+- Content **outside** the boundary (e.g., navigation, footer) is not affected by locale switching.
+
+## Locale Discovery
+
+No HTML attributes are needed for locale discovery. The `write-locales --dest` command generates a manifest at `{dest}/_rcc/locales.json` that the connector fetches automatically at runtime. If you use a custom script instead of `write-locales`, you must produce this manifest yourself (a JSON array of locale codes, e.g., `["fr","de"]`).
+
+## CloudCannon data_config
+
+Each locale needs a `data_config` entry. The key format **must** be `locales_{code}`:
+
+```yaml
+data_config:
+  locales_fr:
+    path: rosey/locales/fr.json
+  locales_de:
+    path: rosey/locales/de.json
+```
+
+## Postbuild Pipeline
+
+The `.cloudcannon/postbuild` script runs Rosey after each CloudCannon build:
+
+```bash
+#!/usr/bin/env bash
+npx rosey generate --source dist
+npx rosey-cloudcannon-connector write-locales --source rosey --dest dist
+mv ./dist ./_untranslated_site
+npx rosey build --source _untranslated_site --dest dist --default-language-at-root
+cp -r _untranslated_site/_rcc dist/_rcc
+```
+
+> **Note:** The final `cp` is required because Rosey excludes `_`-prefixed directories from its build output. The RCC client fetches `/_rcc/locales.json` at runtime for locale discovery, so it must be present in the final `dist/`.
+
+## write-locales CLI
+
+```bash
+npx rosey-cloudcannon-connector write-locales [options]
+```
+
+| Flag | Description |
+|---|---|
+| `-s, --source <dir>` | Rosey directory (default: `rosey`) |
+| `-d, --dest <dir>` | **(required)** Build output directory; writes locale manifest to `{dest}/_rcc/locales.json` |
+| `-l, --locales <codes>` | Comma-separated locale codes (e.g., `fr,de`); auto-detects from existing files if omitted |
+
+## init CLI (Setup Wizard)
+
+The recommended starting point for new projects. Configures the entire Rosey + RCC stack in one command.
+
+**Interactive** (prompts for all options):
+
+```bash
+npx rosey-cloudcannon-connector init
+```
+
+**Non-interactive / headless** (for agents, CI, and scripting):
+
+```bash
+npx rosey-cloudcannon-connector init --yes --locales fr,de
+```
+
+Pass `--yes` (`-y`) to skip all prompts. `--locales` is required in this mode; everything else has sensible defaults. Override any default with flags:
+
+| Flag | Short | Default |
+|---|---|---|
+| `--locales <codes>` | `-l` | **(required)** |
+| `--default-language <code>` | | `en` |
+| `--build-dir <dir>` | `-b` | auto-detected or `dist` |
+| `--rosey-dir <dir>` | | `rosey` |
+| `--write-locales` / `--no-write-locales` | | `--write-locales` |
+| `--content-at-root` / `--no-content-at-root` | | `--content-at-root` |
+| `--collection` / `--no-collection` | | `--collection` |
+
+The wizard (both modes):
+1. Detects existing project context (CC config, build dir, package manager, installed packages)
+2. Installs `rosey` and `rosey-cloudcannon-connector` (skips if already installed)
+3. Creates or appends to `.cloudcannon/postbuild` with the Rosey pipeline
+4. Creates `rosey.yml` with `source` and `default_language`
+5. Updates `cloudcannon.config.yml` with `data_config` entries (and optionally `collections_config` for a browsable locales collection)
+6. Prints follow-up instructions (sync paths, `<html lang>`, `data-rosey` tagging, RCC import)
+
+## Split-by-Directory for Body Content
+
+For pages with large body content (blog posts, articles), use per-locale content collections instead of Rosey's single-key approach. Each locale gets its own content directory (`src/content/blog_fr/`, `src/content/blog_de/`) with full source files that editors manage like any normal CMS collection.
+
+The SSG builds locale pages natively to the correct URLs (e.g., `/fr/blog/[slug]/`). Rosey still runs in postbuild and **merges** with pre-existing locale pages -- it respects the existing content and only translates elements with `data-rosey` attributes (shared UI strings like breadcrumbs, sidebar headings, etc.).
+
+Key requirements:
+- **Locale routes**: Use a dynamic `[locale]` parameter (`src/pages/[locale]/blog/[...slug].astro`) with `getStaticPaths` iterating locale codes
+- **Rosey root alignment**: Locale pages must set `data-rosey-root` to the English-equivalent path (e.g., `blog/my-post`, not `fr/blog/my-post`) via a `roseyRoot` prop on the page layout
+- **Suppress `data-rosey` on frontmatter fields**: Use `data-rosey={false}` on title, description, tag elements in the shared template -- these are natively translated from the locale collection
+- **Keep `data-rosey` on shared UI strings**: Breadcrumbs, "Share this article:", "Latest News" etc. still need Rosey translation
+- **Locale config utility**: Central `src/lib/locales.ts` mapping locale codes to collection names, date locale strings, and labels
+- **CloudCannon collections**: Add `blog_fr`, `blog_de` etc. to `collections_config` with `url: /{locale}/blog/[full_slug]/`
+
+## Visitor-Facing Locale Picker
+
+A locale picker lets visitors switch between language versions of the current page (e.g., `/about/` to `/fr/about/`). This is separate from the RCC's editor-side locale switcher.
+
+**Important: ask the user** whether they want a locale picker added, or whether they already have one / want to bring their own. Do not add one automatically.
+
+### How It Works
+
+The picker is a build-time component that renders links for each locale. URL construction:
+
+1. Parse the current page's URL path
+2. Check if the first path segment is a known locale code (e.g., `fr`, `de`)
+3. If yes, strip the prefix to get the base path; if no, the current path is the base path (default locale)
+4. For each locale, construct the URL: `/{locale}{basePath}` for non-default, `{basePath}` for the default language
+
+### Rosey URL Rewriting and `data-rosey-ignore`
+
+When Rosey generates translated pages, it rewrites **all internal links** to prepend the locale prefix. This means a locale picker link to `/fr/about/` on the English `/about/` page would have its `/about/` (English) link rewritten to `/fr/about/` on the Rosey-generated `/fr/about/` page — breaking the "switch to English" link.
+
+The fix: add **`data-rosey-ignore`** to every `<a>` in the locale picker. Rosey skips URL rewriting on elements with this attribute. The links stay exactly as built.
+
+For **split-by-directory pages** (e.g., `/fr/blog/post/` built natively by the SSG), Rosey only touches `data-rosey` elements and does not rewrite links — so `data-rosey-ignore` is harmless but still good practice.
+
+### Active State
+
+The build-time HTML always reflects the English page's perspective, so the "active" locale highlight is wrong on Rosey-generated pages. A small client-side script compares each link's `href` against `window.location.pathname` and toggles the active class at runtime.
+
+### Example (Astro)
+
+```astro
+---
+const localeConfig = { fr: "FR", de: "DE" };
+const localeCodes = Object.keys(localeConfig);
+const defaultLocale = "en";
+const pathname = Astro.url.pathname;
+
+const segments = pathname.split("/").filter(Boolean);
+const isLocalePath = localeCodes.includes(segments[0]);
+const basePath = isLocalePath
+  ? "/" + segments.slice(1).join("/") + (segments.slice(1).length ? "/" : "")
+  : pathname;
+
+function buildPath(base, locale) {
+  if (locale === defaultLocale) return base || "/";
+  return `/${locale}${base.startsWith("/") ? base : `/${base}`}`;
+}
+---
+<nav aria-label="Language">
+  <a href={buildPath(basePath, "en")} data-rosey-ignore hreflang="en">EN</a>
+  {localeCodes.map((code) => (
+    <a href={buildPath(basePath, code)} data-rosey-ignore hreflang={code}>
+      {localeConfig[code]}
+    </a>
+  ))}
+</nav>
+<script>
+  // Fix active state on Rosey-generated pages
+  document.querySelectorAll("nav[aria-label='Language'] a").forEach((link) => {
+    const match = link.pathname === window.location.pathname;
+    link.classList.toggle("active", match);
+  });
+</script>
+```
+
+## CloudCannon collections_config for Locales (Optional)
+
+Optionally expose locale files as a browsable data collection in the CloudCannon sidebar. This is useful for editing translations that don't appear visually on a page (HTML attributes, `<head>` values, etc.). The `init` wizard offers this as a prompt.
+
+```yaml
+collections_config:
+  locales:
+    path: rosey/locales
+    name: Locales
+    icon: translate
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+    _inputs:
+      value:
+        type: html
+        label: Translation
+        cascade: true
+      original:
+        hidden: true
+        cascade: true
+      _base_original:
+        disabled: true
+        cascade: true
+```

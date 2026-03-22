@@ -1,6 +1,6 @@
 {% assign_local c = "c-navigation" %}
 <header class="c-header">
-    <nav class="{{c}} {{c}}--close {{c}}--{{nav.nav_color_group}}" aria-label="Main menu" id="main-menu">
+    <nav class="{{c}} {{c}}--close {{c}}--{{nav.nav_color_group}}" aria-label="Main menu" id="main-menu" data-rosey-ns="nav">
         <div class="{{c}}__skip-to-content-link" >
             {% bookshop "generic/button"
                 url: '#main'
@@ -30,11 +30,11 @@
                             {% assign nav_item_with_slash = navitem.link_url | append: "/" %}
                             {% if page.url == navitem.link_url or page.url == nav_item_with_slash %}
                                 <li class="{{ c }}__navlist__item {{ c }}__navlist__item--active" aria-current="page">
-                                    <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}">{{ navitem.label }}</a>
+                                    <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}" data-rosey="link-{{ forloop.index0 }}">{{ navitem.label }}</a>
                                 </li>
                             {% else %}
                                 <li class="{{ c }}__navlist__item">
-                                    <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}">{{ navitem.label }}</a>
+                                    <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}" data-rosey="link-{{ forloop.index0 }}">{{ navitem.label }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
@@ -49,11 +49,11 @@
                             {% assign nav_item_with_slash = navitem.link_url | append: "/" %}
                             {% if page.url == navitem.link_url or page.url == nav_item_with_slash %}
                                 <li class="{{ c }}__navlist__item {{ c }}__navlist__item--active" aria-current="page">
-                                    <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}">{{ navitem.label }}</a>
+                                    <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}" data-rosey="link-{{ forloop.index0 }}">{{ navitem.label }}</a>
                                 </li>
                             {% else %}
                                 <li class="{{ c }}__navlist__item">
-                                    <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}">{{ navitem.label }}</a>
+                                    <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}" data-rosey="link-{{ forloop.index0 }}">{{ navitem.label }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
@@ -73,6 +73,7 @@
                         {% bookshop "generic/social-icons" social_media_links:site.social_media_links style:social_icons_style _liveRender:false %}
                     </div>                
                 </div>
+                {% include 'partials/nav/locale-picker.html' %}
             </div>
             
         </div>

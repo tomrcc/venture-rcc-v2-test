@@ -20,7 +20,9 @@
   </head>
   <body>
     {% include 'partials/nav/navigation.html' %}
-    <main id="main">
+    {% assign rosey_slug = page.url | replace: '/', '' %}
+    {% if rosey_slug == '' %}{% assign rosey_slug = 'index' %}{% endif %}
+    <main id="main" data-rosey-root="{{ rosey_slug }}">
       {% bookshop_include "hero" hero: hero title: title permalink: permalink %}
 
       {% bookshop_include "page" content_blocks: content_blocks %}

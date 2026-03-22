@@ -1,0 +1,46 @@
+{% assign locale_codes = "fr" | split: "," %}
+{% assign locale_labels = "FR" | split: "," %}
+{% assign default_locale = "en" %}
+
+{% assign path_segments = page.url | split: "/" %}
+{% assign first_segment = path_segments[1] %}
+
+{% assign is_locale_path = false %}
+{% for code in locale_codes %}
+    {% if first_segment == code %}
+        {% assign is_locale_path = true %}
+    {% endif %}
+{% endfor %}
+
+{% if is_locale_path %}
+    {% assign base_segments = "" %}
+    {% for segment in path_segments %}
+        {% if forloop.index0 > 1 and segment != "" %}
+            {% assign base_segments = base_segments | append: "/" | append: segment %}
+        {% endif %}
+    {% endfor %}
+    {% assign base_path = base_segments | append: "/" %}
+    {% if base_path == "/" %}{% assign base_path = "/" %}{% endif %}
+{% else %}
+    {% assign base_path = page.url %}
+{% endif %}
+
+<nav class="c-locale-picker" aria-label="Language">
+    <a class="c-locale-picker__link" href="{{ base_path }}" data-rosey-ignore hreflang="en">EN</a>
+    {% for code in locale_codes %}
+        {% if base_path == "/" %}
+            {% assign locale_url = "/" | append: code | append: "/" %}
+        {% else %}
+            {% assign locale_url = "/" | append: code | append: base_path %}
+        {% endif %}
+        <a class="c-locale-picker__link" href="{{ locale_url }}" data-rosey-ignore hreflang="{{ code }}">{{ locale_labels[forloop.index0] }}</a>
+    {% endfor %}
+</nav>
+<script>
+    document.querySelectorAll('.c-locale-picker__link').forEach(function(link) {
+        var isActive = link.pathname === window.location.pathname;
+        if (isActive) {
+            link.classList.add('c-locale-picker__link--active');
+        }
+    });
+</script>

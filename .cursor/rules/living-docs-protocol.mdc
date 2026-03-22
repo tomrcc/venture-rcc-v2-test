@@ -1,0 +1,15 @@
+---
+description: Protocol for evolving project skills and rules as living documents
+alwaysApply: true
+---
+
+# Living Documents Protocol
+
+The `.cursor/skills/` and `.cursor/rules/` files in this project are **living documents** that should grow over time as agents learn new patterns, gotchas, and improvements.
+
+## Rules
+
+1. **Ask before updating.** When you discover something worth adding to a skill or rule file (a new gotcha, a better pattern, a correction), **ask the user for permission** before modifying any file in `.cursor/skills/` or `.cursor/rules/`.
+2. **Append to "Learnings and Gotchas."** Each skill has a dedicated section for accumulated knowledge. New learnings go there, not scattered throughout the document.
+3. **Be specific.** Learnings should include the context (what you were doing), the problem or insight, and the resolution. Vague notes are not helpful.
+4. **Never silently modify.** Do not update skill or rule files as a side effect of other work without explicit user approval.

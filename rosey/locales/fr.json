@@ -1,1 +1,582 @@
-{}
+{
+  "404:hero:primary_heading": {
+    "original": "\n      404\n    ",
+    "value": "\n      404\n    ",
+    "_base_original": "\n      404\n    "
+  },
+  "404:simple-text-block-0:primary_heading": {
+    "original": "\n      Page Not Found\n    ",
+    "value": "\n      Page non trouvée\n    ",
+    "_base_original": "\n      Page Not Found\n    "
+  },
+  "404:simple-text-block-0:text": {
+    "original": "    \n        <p>Sorry, but the page you were trying to view does not exist.</p>\n\n    ",
+    "value": "    \n        <p>Désolé, la page que vous cherchiez n’existe pas.</p>\n\n    ",
+    "_base_original": "    \n        <p>Sorry, but the page you were trying to view does not exist.</p>\n\n    "
+  },
+  "booking:centered-large-asset-3:button_text": {
+    "original": "\n        Book Now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Book Now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Book Now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "booking:centered-large-asset-3:eyebrow_headline": {
+    "original": "\n      Eyebrow Heading\n    ",
+    "value": "\n      Eyebrow Heading\n    ",
+    "_base_original": "\n      Eyebrow Heading\n    "
+  },
+  "booking:centered-large-asset-3:primary_heading": {
+    "original": "\n      Large image or video block\n    ",
+    "value": "\n      Large image or video block\n    ",
+    "_base_original": "\n      Large image or video block\n    "
+  },
+  "booking:centered-large-asset-3:text": {
+    "original": "    \n        <p>Have a strong visual element you want to share? This component gives you the flexibility to either add a YouTube video or an image.</p>\n\n    ",
+    "value": "    \n        <p>Have a strong visual element you want to share? This component gives you the flexibility to either add a YouTube video or an image.</p>\n\n    ",
+    "_base_original": "    \n        <p>Have a strong visual element you want to share? This component gives you the flexibility to either add a YouTube video or an image.</p>\n\n    "
+  },
+  "booking:form-0:button_text": {
+    "original": "\n        Book Now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Book Now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Book Now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "booking:form-0:eyebrow_headline": {
+    "original": "\n      Eyebrow Heading\n    ",
+    "value": "\n      Eyebrow Heading\n    ",
+    "_base_original": "\n      Eyebrow Heading\n    "
+  },
+  "booking:form-0:primary_heading": {
+    "original": "\n      Booking form\n    ",
+    "value": "\n      Formulaire de réservation\n    ",
+    "_base_original": "\n      Booking form\n    "
+  },
+  "booking:form-0:text": {
+    "original": "    \n        \n    ",
+    "value": "    \n        \n    ",
+    "_base_original": "    \n        \n    "
+  },
+  "booking:hero:button_text": {
+    "original": "\n        Add an optional button\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Add an optional button\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Add an optional button\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "booking:hero:eyebrow_headline": {
+    "original": "\n      Tag or label headline\n    ",
+    "value": "\n      Tag or label headline\n    ",
+    "_base_original": "\n      Tag or label headline\n    "
+  },
+  "booking:hero:primary_heading": {
+    "original": "\n      A hero for a booking form page\n    ",
+    "value": "\n      Un héros pour une page de réservation\n    ",
+    "_base_original": "\n      A hero for a booking form page\n    "
+  },
+  "booking:hero:text": {
+    "original": "    \n        <p>Here are a few options to use above the fold. Customize these elements to display your products or services in the best way possible.</p>\n\n    ",
+    "value": "    \n        <p>Voici quelques options à utiliser au-dessus du pli. Personnalisez ces éléments pour afficher vos produits ou services de la meilleure façon possible.</p>\n\n    ",
+    "_base_original": "    \n        <p>Here are a few options to use above the fold. Customize these elements to display your products or services in the best way possible.</p>\n\n    "
+  },
+  "booking:icon-cards-2:0:eyebrow_headline": {
+    "original": "\n      icon card\n    ",
+    "value": "\n      icon card\n    ",
+    "_base_original": "\n      icon card\n    "
+  },
+  "booking:icon-cards-2:0:primary_heading": {
+    "original": "\n      Heading\n    ",
+    "value": "\n      Heading\n    ",
+    "_base_original": "\n      Heading\n    "
+  },
+  "booking:icon-cards-2:0:text": {
+    "original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "value": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "_base_original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    "
+  },
+  "booking:icon-cards-2:1:eyebrow_headline": {
+    "original": "\n      icon card\n    ",
+    "value": "\n      icon card\n    ",
+    "_base_original": "\n      icon card\n    "
+  },
+  "booking:icon-cards-2:1:primary_heading": {
+    "original": "\n      Heading\n    ",
+    "value": "\n      Heading\n    ",
+    "_base_original": "\n      Heading\n    "
+  },
+  "booking:icon-cards-2:1:text": {
+    "original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "value": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "_base_original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    "
+  },
+  "booking:icon-cards-2:2:eyebrow_headline": {
+    "original": "\n      icon card\n    ",
+    "value": "\n      icon card\n    ",
+    "_base_original": "\n      icon card\n    "
+  },
+  "booking:icon-cards-2:2:primary_heading": {
+    "original": "\n      Heading\n    ",
+    "value": "\n      Heading\n    ",
+    "_base_original": "\n      Heading\n    "
+  },
+  "booking:icon-cards-2:2:text": {
+    "original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "value": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "_base_original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    "
+  },
+  "booking:icon-cards-2:button-0:button_text": {
+    "original": "\n        Another optional button!\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Another optional button!\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Another optional button!\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "booking:icon-cards-2:eyebrow_headline": {
+    "original": "\n      Bite-sized information\n    ",
+    "value": "\n      Bite-sized information\n    ",
+    "_base_original": "\n      Bite-sized information\n    "
+  },
+  "booking:icon-cards-2:primary_heading": {
+    "original": "\n      An icon card grid\n    ",
+    "value": "\n      An icon card grid\n    ",
+    "_base_original": "\n      An icon card grid\n    "
+  },
+  "booking:icon-cards-2:text": {
+    "original": "    \n        <p>Sometimes you only need a small amount of text. An icon section within a card grid is a great option to showcase your content.</p>\n\n    ",
+    "value": "    \n        <p>Sometimes you only need a small amount of text. An icon section within a card grid is a great option to showcase your content.</p>\n\n    ",
+    "_base_original": "    \n        <p>Sometimes you only need a small amount of text. An icon section within a card grid is a great option to showcase your content.</p>\n\n    "
+  },
+  "booking:simple-text-block-1:eyebrow_headline": {
+    "original": "\n      Eyebrow Heading\n    ",
+    "value": "\n      Eyebrow Heading\n    ",
+    "_base_original": "\n      Eyebrow Heading\n    "
+  },
+  "booking:simple-text-block-1:primary_heading": {
+    "original": "\n      A simple text block for your FAQs\n    ",
+    "value": "\n      A simple text block for your FAQs\n    ",
+    "_base_original": "\n      A simple text block for your FAQs\n    "
+  },
+  "booking:simple-text-block-1:text": {
+    "original": "    \n        <h3><strong>How do I use the service?</strong></h3>\n<p>Customers want to know all the information before making a final decision. Make sure you provide it to them.</p>\n<h3><strong>How do I pay for the service?</strong></h3>\n<p>Let your customers know if they can pay by EFTPOS or credit card.</p>\n\n    ",
+    "value": "    \n        <h3><strong>How do I use the service?</strong></h3>\n<p>Customers want to know all the information before making a final decision. Make sure you provide it to them.</p>\n<h3><strong>How do I pay for the service?</strong></h3>\n<p>Let your customers know if they can pay by EFTPOS or credit card.</p>\n\n    ",
+    "_base_original": "    \n        <h3><strong>How do I use the service?</strong></h3>\n<p>Customers want to know all the information before making a final decision. Make sure you provide it to them.</p>\n<h3><strong>How do I pay for the service?</strong></h3>\n<p>Let your customers know if they can pay by EFTPOS or credit card.</p>\n\n    "
+  },
+  "contact:form-0:button_text": {
+    "original": "\n        Submit\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Submit\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Submit\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "contact:form-0:eyebrow_headline": {
+    "original": "\n      Eyebrow Heading\n    ",
+    "value": "\n      Eyebrow Heading\n    ",
+    "_base_original": "\n      Eyebrow Heading\n    "
+  },
+  "contact:form-0:primary_heading": {
+    "original": "\n      Contact us\n    ",
+    "value": "\n      Contactez-nous\n    ",
+    "_base_original": "\n      Contact us\n    "
+  },
+  "contact:form-0:text": {
+    "original": "    \n        <p>Invite your customers to get in touch with you.</p>\n\n    ",
+    "value": "    \n        <p>Invitez vos clients à entrer en contact avec vous.</p>\n\n    ",
+    "_base_original": "    \n        <p>Invite your customers to get in touch with you.</p>\n\n    "
+  },
+  "contact:hero:button_text": {
+    "original": "\n        Contact us\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Contact us\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Contact us\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "contact:hero:eyebrow_headline": {
+    "original": "\n      Eyebrow Heading\n    ",
+    "value": "\n      Eyebrow Heading\n    ",
+    "_base_original": "\n      Eyebrow Heading\n    "
+  },
+  "contact:hero:primary_heading": {
+    "original": "\n      Contact us\n    ",
+    "value": "\n      Contactez-nous\n    ",
+    "_base_original": "\n      Contact us\n    "
+  },
+  "contact:hero:text": {
+    "original": "    \n        <p>Add some description text to complement the block.</p>\n\n    ",
+    "value": "    \n        <p>Ajoutez du texte descriptif pour compléter le bloc.</p>\n\n    ",
+    "_base_original": "    \n        <p>Add some description text to complement the block.</p>\n\n    "
+  },
+  "contact:image-cards-1:0:eyebrow_headline": {
+    "original": "\n      Eyebrow Heading\n    ",
+    "value": "\n      Eyebrow Heading\n    ",
+    "_base_original": "\n      Eyebrow Heading\n    "
+  },
+  "contact:image-cards-1:0:primary_heading": {
+    "original": "\n      Primary Heading\n    ",
+    "value": "\n      Primary Heading\n    ",
+    "_base_original": "\n      Primary Heading\n    "
+  },
+  "contact:image-cards-1:0:text": {
+    "original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "value": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "_base_original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    "
+  },
+  "contact:image-cards-1:1:eyebrow_headline": {
+    "original": "\n      Eyebrow Heading\n    ",
+    "value": "\n      Eyebrow Heading\n    ",
+    "_base_original": "\n      Eyebrow Heading\n    "
+  },
+  "contact:image-cards-1:1:primary_heading": {
+    "original": "\n      Primary Heading\n    ",
+    "value": "\n      Primary Heading\n    ",
+    "_base_original": "\n      Primary Heading\n    "
+  },
+  "contact:image-cards-1:1:text": {
+    "original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "value": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "_base_original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    "
+  },
+  "contact:image-cards-1:2:eyebrow_headline": {
+    "original": "\n      Eyebrow Heading\n    ",
+    "value": "\n      Eyebrow Heading\n    ",
+    "_base_original": "\n      Eyebrow Heading\n    "
+  },
+  "contact:image-cards-1:2:primary_heading": {
+    "original": "\n      Primary Heading\n    ",
+    "value": "\n      Primary Heading\n    ",
+    "_base_original": "\n      Primary Heading\n    "
+  },
+  "contact:image-cards-1:2:text": {
+    "original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "value": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    ",
+    "_base_original": "    \n        <p>These versatile cards can be used to talk about your services or products, or anything else you are keen to share with your audience.</p>\n\n    "
+  },
+  "contact:image-cards-1:eyebrow_headline": {
+    "original": "\n      Bite-sized information\n    ",
+    "value": "\n      Bite-sized information\n    ",
+    "_base_original": "\n      Bite-sized information\n    "
+  },
+  "contact:image-cards-1:primary_heading": {
+    "original": "\n      An image card grid\n    ",
+    "value": "\n      An image card grid\n    ",
+    "_base_original": "\n      An image card grid\n    "
+  },
+  "contact:image-cards-1:text": {
+    "original": "    \n        <p>These image cards combine a short written message and a strong visual image.</p>\n\n    ",
+    "value": "    \n        <p>These image cards combine a short written message and a strong visual image.</p>\n\n    ",
+    "_base_original": "    \n        <p>These image cards combine a short written message and a strong visual image.</p>\n\n    "
+  },
+  "contact:left-right-contact-2:button-0:button_text": {
+    "original": "\n        Contact us\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Contact us\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Contact us\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "contact:left-right-contact-2:icon-0:text": {
+    "original": "    \n        <p>Email address: mybusiness@example.com</p>\n\n    ",
+    "value": "    \n        <p>Email address: mybusiness@example.com</p>\n\n    ",
+    "_base_original": "    \n        <p>Email address: mybusiness@example.com</p>\n\n    "
+  },
+  "contact:left-right-contact-2:icon-1:text": {
+    "original": "    \n        <p>Phone number: 312 325 326</p>\n\n    ",
+    "value": "    \n        <p>Phone number: 312 325 326</p>\n\n    ",
+    "_base_original": "    \n        <p>Phone number: 312 325 326</p>\n\n    "
+  },
+  "contact:left-right-contact-2:icon-2:text": {
+    "original": "    \n        <p>Address: 1 Fake St, Faketown</p>\n\n    ",
+    "value": "    \n        <p>Address: 1 Fake St, Faketown</p>\n\n    ",
+    "_base_original": "    \n        <p>Address: 1 Fake St, Faketown</p>\n\n    "
+  },
+  "contact:left-right-contact-2:icon-3:text": {
+    "original": "    \n        <p>Opening hours: 9-5pm, Monday to Friday</p>\n\n    ",
+    "value": "    \n        <p>Opening hours: 9-5pm, Monday to Friday</p>\n\n    ",
+    "_base_original": "    \n        <p>Opening hours: 9-5pm, Monday to Friday</p>\n\n    "
+  },
+  "contact:left-right-contact-2:primary_heading": {
+    "original": "\n      A contact block\n    ",
+    "value": "\n      A contact block\n    ",
+    "_base_original": "\n      A contact block\n    "
+  },
+  "contact:left-right-contact-2:text": {
+    "original": "    \n        <p>This is a simple yet powerful block to display not only your location by using OpenStreetMaps, but also any other contact details you wish to share with your customers.</p>\n\n    ",
+    "value": "    \n        <p>This is a simple yet powerful block to display not only your location by using OpenStreetMaps, but also any other contact details you wish to share with your customers.</p>\n\n    ",
+    "_base_original": "    \n        <p>This is a simple yet powerful block to display not only your location by using OpenStreetMaps, but also any other contact details you wish to share with your customers.</p>\n\n    "
+  },
+  "footer:content": {
+    "original": "<p>© Enter your copyright and <a href=\"/terms-and-conditions/\" title=\"Terms and Conditions\">terms and conditions</a>.</p>\n",
+    "value": "<p>© Entrez vos droits d'auteur et <a href=\"/terms-and-conditions/\" title=\"Conditions générales\">conditions générales</a>.</p>\n",
+    "_base_original": "<p>© Enter your copyright and <a href=\"/terms-and-conditions/\" title=\"Terms and Conditions\">terms and conditions</a>.</p>\n"
+  },
+  "footer:link-0": {
+    "original": "Our Services",
+    "value": "Nos Services",
+    "_base_original": "Our Services"
+  },
+  "footer:link-1": {
+    "original": "Book Now",
+    "value": "Réserver",
+    "_base_original": "Book Now"
+  },
+  "footer:link-2": {
+    "original": "Contact Us",
+    "value": "Contactez-nous",
+    "_base_original": "Contact Us"
+  },
+  "index:gallery-3:button_text": {
+    "original": "\n        Load more\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Load more\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Load more\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "index:gallery-3:eyebrow_headline": {
+    "original": "\n      a simple gallery\n    ",
+    "value": "\n      une galerie simple\n    ",
+    "_base_original": "\n      a simple gallery\n    "
+  },
+  "index:gallery-3:primary_heading": {
+    "original": "\n      Image Gallery\n    ",
+    "value": "\n      Galerie d’images\n    ",
+    "_base_original": "\n      Image Gallery\n    "
+  },
+  "index:gallery-3:text": {
+    "original": "    \n        \n    ",
+    "value": "    \n        \n    ",
+    "_base_original": "    \n        \n    "
+  },
+  "index:hero:button_text": {
+    "original": "\n        Our services\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Our services\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Our services\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "index:hero:eyebrow_headline": {
+    "original": "\n      A small business template\n    ",
+    "value": "\n      Un modèle pour petites entreprises\n    ",
+    "_base_original": "\n      A small business template\n    "
+  },
+  "index:hero:primary_heading": {
+    "original": "\n      Empower your business with this brilliant template\n    ",
+    "value": "\n      Donnez de la puissance à votre entreprise avec ce modèle brillant\n    ",
+    "_base_original": "\n      Empower your business with this brilliant template\n    "
+  },
+  "index:hero:text": {
+    "original": "    \n        \n    ",
+    "value": "    \n        \n    ",
+    "_base_original": "    \n        \n    "
+  },
+  "index:left-right-contact-5:icon-0:text": {
+    "original": "    \n        <p>Email address: <a href=\"mailto:mybusiness@example.com\">mybusiness@example.com</a></p>\n\n    ",
+    "value": "    \n        <p>Email address: <a href=\"mailto:mybusiness@example.com\">mybusiness@example.com</a></p>\n\n    ",
+    "_base_original": "    \n        <p>Email address: <a href=\"mailto:mybusiness@example.com\">mybusiness@example.com</a></p>\n\n    "
+  },
+  "index:left-right-contact-5:icon-1:text": {
+    "original": "    \n        <p>Phone number: 312 325 326</p>\n\n    ",
+    "value": "    \n        <p>Phone number: 312 325 326</p>\n\n    ",
+    "_base_original": "    \n        <p>Phone number: 312 325 326</p>\n\n    "
+  },
+  "index:left-right-contact-5:icon-2:text": {
+    "original": "    \n        <p>Address: 1 Fake St, Faketown</p>\n\n    ",
+    "value": "    \n        <p>Address: 1 Fake St, Faketown</p>\n\n    ",
+    "_base_original": "    \n        <p>Address: 1 Fake St, Faketown</p>\n\n    "
+  },
+  "index:left-right-contact-5:icon-3:text": {
+    "original": "    \n        <p>Opening hours: 9-5pm, Monday to Friday</p>\n\n    ",
+    "value": "    \n        <p>Opening hours: 9-5pm, Monday to Friday</p>\n\n    ",
+    "_base_original": "    \n        <p>Opening hours: 9-5pm, Monday to Friday</p>\n\n    "
+  },
+  "index:left-right-contact-5:primary_heading": {
+    "original": "\n      A contact block\n    ",
+    "value": "\n      Un bloc de contact\n    ",
+    "_base_original": "\n      A contact block\n    "
+  },
+  "index:left-right-contact-5:text": {
+    "original": "    \n        <p>This is a simple yet powerful block to display not only your location by using OpenStreetMaps, but also any other contact details you wish to share with your customers.</p>\n\n    ",
+    "value": "    \n        <p>Il s’agit d’un bloc simple mais puissant pour afficher non seulement votre emplacement via OpenStreetMaps, mais aussi tout autre détail de contact que vous souhaitez partager avec vos clients.</p>\n\n    ",
+    "_base_original": "    \n        <p>This is a simple yet powerful block to display not only your location by using OpenStreetMaps, but also any other contact details you wish to share with your customers.</p>\n\n    "
+  },
+  "index:left-right-labelled-icons-4:button-0:button_text": {
+    "original": "\n        Book Now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Book Now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Book Now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "index:left-right-labelled-icons-4:eyebrow_headline": {
+    "original": "\n      let your features shine\n    ",
+    "value": "\n      mettez en avant vos atouts\n    ",
+    "_base_original": "\n      let your features shine\n    "
+  },
+  "index:left-right-labelled-icons-4:icon-0:text": {
+    "original": "    \n        <p>100% Happy customer reviews</p>\n\n    ",
+    "value": "    \n        <p>100% d’avis clients satisfaits</p>\n\n    ",
+    "_base_original": "    \n        <p>100% Happy customer reviews</p>\n\n    "
+  },
+  "index:left-right-labelled-icons-4:icon-1:text": {
+    "original": "    \n        <p>Great customer service</p>\n\n    ",
+    "value": "    \n        <p>Excellent service client</p>\n\n    ",
+    "_base_original": "    \n        <p>Great customer service</p>\n\n    "
+  },
+  "index:left-right-labelled-icons-4:icon-2:text": {
+    "original": "    \n        <p>Outstanding product reviews</p>\n\n    ",
+    "value": "    \n        <p>Avis produits exceptionnels</p>\n\n    ",
+    "_base_original": "    \n        <p>Outstanding product reviews</p>\n\n    "
+  },
+  "index:left-right-labelled-icons-4:primary_heading": {
+    "original": "\n      A featured icons block\n    ",
+    "value": "\n      Un bloc d’icônes en vedette\n    ",
+    "_base_original": "\n      A featured icons block\n    "
+  },
+  "index:left-right-simple-0:button-0:button_text": {
+    "original": "\n        Book now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Book now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Book now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "index:left-right-simple-0:eyebrow_headline": {
+    "original": "\n      tag or label headline\n    ",
+    "value": "\n      étiquette ou titre\n    ",
+    "_base_original": "\n      tag or label headline\n    "
+  },
+  "index:left-right-simple-0:primary_heading": {
+    "original": "\n      A component to showcase your brand\n    ",
+    "value": "\n      Un composant pour mettre en valeur votre marque\n    ",
+    "_base_original": "\n      A component to showcase your brand\n    "
+  },
+  "index:left-right-simple-0:text": {
+    "original": "    \n        <p>Description text to complement the block.</p>\n\n    ",
+    "value": "    \n        <p>Texte de description pour compléter le bloc.</p>\n\n    ",
+    "_base_original": "    \n        <p>Description text to complement the block.</p>\n\n    "
+  },
+  "index:left-right-testimonial-2:button-0:button_text": {
+    "original": "\n        Book now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Book now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Book now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "index:left-right-testimonial-2:eyebrow_headline": {
+    "original": "\n      What your customers say\n    ",
+    "value": "\n      Ce que disent vos clients\n    ",
+    "_base_original": "\n      What your customers say\n    "
+  },
+  "index:left-right-testimonial-2:primary_heading": {
+    "original": "\n      “Their customer service is second to none.”\n    ",
+    "value": "\n      “Leur service client est sans pareil.”\n    ",
+    "_base_original": "\n      “Their customer service is second to none.”\n    "
+  },
+  "index:left-right-testimonial-2:text": {
+    "original": "    \n        <p>John Smith</p>\n\n    ",
+    "value": "    \n        <p>John Smith</p>\n\n    ",
+    "_base_original": "    \n        <p>John Smith</p>\n\n    "
+  },
+  "index:price-list-1:button_text": {
+    "original": "\n        Book now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Book now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Book now\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "index:price-list-1:eyebrow_headline": {
+    "original": "\n      Eyebrow Heading\n    ",
+    "value": "\n      Titre en surtitre\n    ",
+    "_base_original": "\n      Eyebrow Heading\n    "
+  },
+  "index:price-list-1:list-0:0:detail": {
+    "original": "$40",
+    "value": "$40",
+    "_base_original": "$40"
+  },
+  "index:price-list-1:list-0:0:label": {
+    "original": "Product 1 ",
+    "value": "Produit 1 ",
+    "_base_original": "Product 1 "
+  },
+  "index:price-list-1:list-0:1:detail": {
+    "original": "$75.99",
+    "value": "$75.99",
+    "_base_original": "$75.99"
+  },
+  "index:price-list-1:list-0:1:label": {
+    "original": "Product 2",
+    "value": "Produit 2",
+    "_base_original": "Product 2"
+  },
+  "index:price-list-1:list-0:2:detail": {
+    "original": "Price on application",
+    "value": "Prix sur demande",
+    "_base_original": "Price on application"
+  },
+  "index:price-list-1:list-0:2:label": {
+    "original": "Product 3",
+    "value": "Produit 3",
+    "_base_original": "Product 3"
+  },
+  "index:price-list-1:list-0:heading": {
+    "original": "Subheadings available",
+    "value": "Sous-titres disponibles",
+    "_base_original": "Subheadings available"
+  },
+  "index:price-list-1:list-1:0:detail": {
+    "original": "$34",
+    "value": "$34",
+    "_base_original": "$34"
+  },
+  "index:price-list-1:list-1:0:label": {
+    "original": "Service 1",
+    "value": "Service 1",
+    "_base_original": "Service 1"
+  },
+  "index:price-list-1:list-1:1:detail": {
+    "original": "$95 per month",
+    "value": "95 $ par mois",
+    "_base_original": "$95 per month"
+  },
+  "index:price-list-1:list-1:1:label": {
+    "original": "Service 2",
+    "value": "Service 2",
+    "_base_original": "Service 2"
+  },
+  "index:price-list-1:list-1:2:detail": {
+    "original": "$79 annually",
+    "value": "79 $ par an",
+    "_base_original": "$79 annually"
+  },
+  "index:price-list-1:list-1:2:label": {
+    "original": "Service 3",
+    "value": "Service 3",
+    "_base_original": "Service 3"
+  },
+  "index:price-list-1:list-1:heading": {
+    "original": "Subheadings available",
+    "value": "Sous-titres disponibles",
+    "_base_original": "Subheadings available"
+  },
+  "index:price-list-1:primary_heading": {
+    "original": "\n      List your services or products\n    ",
+    "value": "\n      Listez vos services ou produits\n    ",
+    "_base_original": "\n      List your services or products\n    "
+  },
+  "index:price-list-1:text": {
+    "original": "    \n        <p>Whether your business is a restaurant, a barber shop, a gym, a café, or anything else, our template has you covered. Add your services and prices to the list below.</p>\n\n    ",
+    "value": "    \n        <p>Que votre entreprise soit un restaurant, un salon de coiffure, une salle de sport, un café ou autre, notre modèle est fait pour vous. Ajoutez vos services et prix à la liste ci-dessous.</p>\n\n    ",
+    "_base_original": "    \n        <p>Whether your business is a restaurant, a barber shop, a gym, a café, or anything else, our template has you covered. Add your services and prices to the list below.</p>\n\n    "
+  },
+  "nav:button_text": {
+    "original": "\n        Skip to contents\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "value": "\n        Skip to contents\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    ",
+    "_base_original": "\n        Skip to contents\n        \n            <!--bookshop-live name(generic/hero-library-icon) params(hero_library_icon_name:arrow_type icon_type:\"solid\" icon_size:'extra-small'  color:'transparent') context() -->\n\n\n\n<span class=\"c-hero-library-icon c-hero-library-icon--extra-small c-hero-library-icon--solid \" style=\"--c-hero-library-icon-color: transparent\">\n    \n        <svg aria-hidden=\"true\" class=\"c-hero-library-icon__svg\" fill=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path clip-rule=\"evenodd\" d=\"M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z\" fill-rule=\"evenodd\"></path>\n</svg>\n    \n</span>\n<!--bookshop-live end-->\n        \n    "
+  },
+  "nav:link-0": {
+    "original": "Our Services",
+    "value": "Nos Services",
+    "_base_original": "Our Services"
+  },
+  "nav:link-1": {
+    "original": "Book Now",
+    "value": "Réserver",
+    "_base_original": "Book Now"
+  },
+  "nav:link-2": {
+    "original": "Contact Us",
+    "value": "Contactez-nous",
+    "_base_original": "Contact Us"
+  },
+  "terms-and-conditions:hero:eyebrow_headline": {
+    "original": "\n      Eyebrow Heading\n    ",
+    "value": "\n      Eyebrow Heading\n    ",
+    "_base_original": "\n      Eyebrow Heading\n    "
+  },
+  "terms-and-conditions:hero:primary_heading": {
+    "original": "\n      Terms and conditions\n    ",
+    "value": "\n      Terms and conditions\n    ",
+    "_base_original": "\n      Terms and conditions\n    "
+  },
+  "terms-and-conditions:hero:text": {
+    "original": "    \n        <p>Description text to complement the block.</p>\n\n    ",
+    "value": "    \n        <p>Description text to complement the block.</p>\n\n    ",
+    "_base_original": "    \n        <p>Description text to complement the block.</p>\n\n    "
+  },
+  "terms-and-conditions:simple-text-block-0:text": {
+    "original": "    \n        <h3>Provide all the necessary information.</h3>\n<p>These terms and conditions outline the rules and regulations for the use of Company Name's Website, located at Website.com.<br><br>By accessing this website we assume you accept these terms and conditions. Do not continue to use Website Name if you do not agree to take all of the terms and conditions stated on this page.<br><br>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company's terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.<br><br><strong>Cookies</strong><br><br>We employ the use of cookies. By accessing Website Name, you agreed to use cookies in agreement with the Company Name's Privacy Policy.<br><br>Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.<br><br><strong>License</strong><br><br>Unless otherwise stated, Company Name and/or its licensors own the intellectual property rights for all material on Website Name. All intellectual property rights are reserved. You may access this from Website Name for your own personal use subjected to restrictions set in these terms and conditions.<br><br>You must not:<br>Republish material from Website Name<br>Sell, rent or sub-license material from Website Name<br>Reproduce, duplicate or copy material from Website Name<br>Redistribute content from Website Name<br>This Agreement shall begin on the date hereof.<br><br>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Company Name does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Company Name,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Company Name shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.<br><br>Company Name reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.<br><br>You warrant and represent that:<br>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;<br>The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;<br>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy<br>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.<br><br>You hereby grant Company Name a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.<br><br><strong>Hyperlinking to our Content</strong><br><br>The following organizations may link to our Website without prior written approval:<br>Government agencies;<br>Search engines;<br>News organizations;<br>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and<br>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.<br><br>These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.<br><br>We may consider and approve other link requests from the following types of organizations:<br>commonly-known consumer and/or business information sources;<br>dot.com community sites;<br>associations or other groups representing charities;<br>online directory distributors;<br>internet portals;<br>accounting, law and consulting firms; and<br>educational institutions and trade associations.<br><br>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Company Name; and (d) the link is in the context of general resource information.<br><br>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.<br><br>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Company Name. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.<br><br>Approved organizations may hyperlink to our Website as follows:<br>By use of our corporate name; or<br>By use of the uniform resource locator being linked to; or<br>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.<br><br>No use of Company Name's logo or other artwork will be allowed for linking absent a trademark license agreement.<br><br><strong>iFrames</strong><br><br>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.<br><br><strong>Content Liability</strong><br><br>We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.<br><br><strong>Reservation of Rights</strong><br><br>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.<br><br><strong>Removal of links from our website</strong><br><br>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.<br><br>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.<br><br><strong>Disclaimer</strong><br><br>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:<br>limit or exclude our or your liability for death or personal injury;<br>limit or exclude our or your liability for fraud or fraudulent misrepresentation;<br>limit any of our or your liabilities in any way that is not permitted under applicable law; or<br>exclude any of our or your liabilities that may not be excluded under applicable law.<br><br>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.<br><br>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>\n\n    ",
+    "value": "    \n        <h3>Provide all the necessary information.</h3>\n<p>These terms and conditions outline the rules and regulations for the use of Company Name's Website, located at Website.com.<br><br>By accessing this website we assume you accept these terms and conditions. Do not continue to use Website Name if you do not agree to take all of the terms and conditions stated on this page.<br><br>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company's terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.<br><br><strong>Cookies</strong><br><br>We employ the use of cookies. By accessing Website Name, you agreed to use cookies in agreement with the Company Name's Privacy Policy.<br><br>Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.<br><br><strong>License</strong><br><br>Unless otherwise stated, Company Name and/or its licensors own the intellectual property rights for all material on Website Name. All intellectual property rights are reserved. You may access this from Website Name for your own personal use subjected to restrictions set in these terms and conditions.<br><br>You must not:<br>Republish material from Website Name<br>Sell, rent or sub-license material from Website Name<br>Reproduce, duplicate or copy material from Website Name<br>Redistribute content from Website Name<br>This Agreement shall begin on the date hereof.<br><br>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Company Name does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Company Name,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Company Name shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.<br><br>Company Name reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.<br><br>You warrant and represent that:<br>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;<br>The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;<br>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy<br>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.<br><br>You hereby grant Company Name a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.<br><br><strong>Hyperlinking to our Content</strong><br><br>The following organizations may link to our Website without prior written approval:<br>Government agencies;<br>Search engines;<br>News organizations;<br>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and<br>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.<br><br>These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.<br><br>We may consider and approve other link requests from the following types of organizations:<br>commonly-known consumer and/or business information sources;<br>dot.com community sites;<br>associations or other groups representing charities;<br>online directory distributors;<br>internet portals;<br>accounting, law and consulting firms; and<br>educational institutions and trade associations.<br><br>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Company Name; and (d) the link is in the context of general resource information.<br><br>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.<br><br>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Company Name. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.<br><br>Approved organizations may hyperlink to our Website as follows:<br>By use of our corporate name; or<br>By use of the uniform resource locator being linked to; or<br>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.<br><br>No use of Company Name's logo or other artwork will be allowed for linking absent a trademark license agreement.<br><br><strong>iFrames</strong><br><br>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.<br><br><strong>Content Liability</strong><br><br>We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.<br><br><strong>Reservation of Rights</strong><br><br>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.<br><br><strong>Removal of links from our website</strong><br><br>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.<br><br>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.<br><br><strong>Disclaimer</strong><br><br>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:<br>limit or exclude our or your liability for death or personal injury;<br>limit or exclude our or your liability for fraud or fraudulent misrepresentation;<br>limit any of our or your liabilities in any way that is not permitted under applicable law; or<br>exclude any of our or your liabilities that may not be excluded under applicable law.<br><br>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.<br><br>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>\n\n    ",
+    "_base_original": "    \n        <h3>Provide all the necessary information.</h3>\n<p>These terms and conditions outline the rules and regulations for the use of Company Name's Website, located at Website.com.<br><br>By accessing this website we assume you accept these terms and conditions. Do not continue to use Website Name if you do not agree to take all of the terms and conditions stated on this page.<br><br>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company's terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.<br><br><strong>Cookies</strong><br><br>We employ the use of cookies. By accessing Website Name, you agreed to use cookies in agreement with the Company Name's Privacy Policy.<br><br>Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.<br><br><strong>License</strong><br><br>Unless otherwise stated, Company Name and/or its licensors own the intellectual property rights for all material on Website Name. All intellectual property rights are reserved. You may access this from Website Name for your own personal use subjected to restrictions set in these terms and conditions.<br><br>You must not:<br>Republish material from Website Name<br>Sell, rent or sub-license material from Website Name<br>Reproduce, duplicate or copy material from Website Name<br>Redistribute content from Website Name<br>This Agreement shall begin on the date hereof.<br><br>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Company Name does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Company Name,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Company Name shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.<br><br>Company Name reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.<br><br>You warrant and represent that:<br>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;<br>The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;<br>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy<br>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.<br><br>You hereby grant Company Name a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.<br><br><strong>Hyperlinking to our Content</strong><br><br>The following organizations may link to our Website without prior written approval:<br>Government agencies;<br>Search engines;<br>News organizations;<br>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and<br>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.<br><br>These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.<br><br>We may consider and approve other link requests from the following types of organizations:<br>commonly-known consumer and/or business information sources;<br>dot.com community sites;<br>associations or other groups representing charities;<br>online directory distributors;<br>internet portals;<br>accounting, law and consulting firms; and<br>educational institutions and trade associations.<br><br>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Company Name; and (d) the link is in the context of general resource information.<br><br>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.<br><br>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Company Name. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.<br><br>Approved organizations may hyperlink to our Website as follows:<br>By use of our corporate name; or<br>By use of the uniform resource locator being linked to; or<br>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.<br><br>No use of Company Name's logo or other artwork will be allowed for linking absent a trademark license agreement.<br><br><strong>iFrames</strong><br><br>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.<br><br><strong>Content Liability</strong><br><br>We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.<br><br><strong>Reservation of Rights</strong><br><br>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.<br><br><strong>Removal of links from our website</strong><br><br>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.<br><br>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.<br><br><strong>Disclaimer</strong><br><br>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:<br>limit or exclude our or your liability for death or personal injury;<br>limit or exclude our or your liability for fraud or fraudulent misrepresentation;<br>limit any of our or your liabilities in any way that is not permitted under applicable law; or<br>exclude any of our or your liabilities that may not be excluded under applicable law.<br><br>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.<br><br>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>\n\n    "
+  }
+}

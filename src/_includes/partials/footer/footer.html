@@ -1,6 +1,6 @@
 {% assign_local c = "c-footer" %}
 
-<footer class="{{ c }} {{ c }}--{{ footer.footer_color_group }}">
+<footer class="{{ c }} {{ c }}--{{ footer.footer_color_group }}" data-rosey-ns="footer">
     <a class="{{c}}__logo-link" href="/" aria-label="Home: {{ footer.logo_text }}" {% if page.url=="/" %}aria-current="page" {% endif %}>
         {% if footer.footer_logo_image and footer.footer_logo_image != '' %}
             {% bookshop "generic/image" image_path:footer.footer_logo_image image_alt:"Site logo" _liveRender:false  %}
@@ -23,16 +23,16 @@
                     {% assign nav_item_with_slash = navitem.link_url | append: "/" %}
                     {% if page.url == navitem.link_url or page.url == nav_item_with_slash %}
                         <li class="{{ c }}__navlist__item {{ c }}__navlist__item--active" aria-current="page">
-                            <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}">{{ navitem.label }}</a>
+                            <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}" data-rosey="link-{{ forloop.index0 }}">{{ navitem.label }}</a>
                         </li>
                     {% else %}
                         <li class="{{ c }}__navlist__item">
-                            <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}">{{ navitem.label }}</a>
+                            <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}" data-rosey="link-{{ forloop.index0 }}">{{ navitem.label }}</a>
                         </li>
                     {% endif %}
                 {% endfor %}
             </ul>            
-            <div class="{{ c }}__content">{{ footer.footer_content | markdownify }}</div>
+            <div class="{{ c }}__content" data-rosey="content">{{ footer.footer_content | markdownify }}</div>
     </div>
 
 </footer>
