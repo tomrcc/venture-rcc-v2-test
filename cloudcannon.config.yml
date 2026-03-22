@@ -1,21 +1,30 @@
 source: src
 paths:
-  static: ""
   uploads: assets/uploads
+  static: ''
 collections_config:
   pages:
     path: pages
     glob:
-      - "!components.html"
-      - "!404.html"
+      - '!components.html'
+      - '!404.html'
     icon: wysiwyg
+    url: /{permalink}/
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
     schemas:
       default:
         path: .cloudcannon/schemas/page.html
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
   data:
     path: _data
     glob:
-      - "!color_groups.yml"
+      - '!color_groups.yml'
     icon: data_usage
     disable_url: true
     disable_add: true
@@ -25,9 +34,7 @@ collections_config:
     path: rosey/locales
     name: Locales
     icon: translate
-    disable_add: true
-    disable_add_folder: true
-    disable_file_actions: true
+    disable_url: false
     _inputs:
       value:
         type: html
@@ -37,45 +44,19 @@ collections_config:
         hidden: true
         cascade: true
       _base_original:
-        disabled: true
         cascade: true
-file_config:
-  - glob: _data/site.yml
-    _inputs:
-      social_media_links:
-        type: array
-        options:
-          structures:
-            values:
-              - label: Social Media Link
-                icon: link
-                value:
-                  link_url:
-                  icon_path:
-                  label:
-                _inputs:
-                  icon_path:
-                    type: image
-                    comment: This input is restricted to only allow images with type SVG
-                    options:
-                      accepts_mime_types:
-                        - image/svg+xml
-data_config:
-  fonts:
-    path: _data/fonts.yml
-  theme:
-    path: _data/theme.yml
-  site:
-    path: _data/site.yml
-  locales_fr:
-    path: rosey/locales/fr.json
+        disabled: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
 _inputs:
   favicon:
     type: image
+    cascade: true
   arrow:
     type: select
     options:
-      value_key: id
+      allow_empty: true
       values:
         - name: Up
           id: up
@@ -85,64 +66,74 @@ _inputs:
           id: down
         - name: Left
           id: left
+      value_key: id
+    cascade: true
   color:
     comment: >-
       Choose a custom icon color (if the icon is an SVG) and rounded border
       color (if one is included).
+    cascade: true
   icon_size:
     type: choice
     options:
       allow_empty: false
-      value_key: id
       values:
         - name: Small
           id: small
         - name: Large
           id: large
+      value_key: id
+    cascade: true
   default_color:
+    type: checkbox
     comment: >-
       Use the original colors of the icon without overriding them (does not
       apply to the border if one is included).
-    type: checkbox
+    cascade: true
   icon_type:
-    comment: >-
-      Choose outline if you want lines to be filled with color and solid if you
-      want the whole image filled with color.
     type: choice
     options:
       allow_empty: false
-      value_key: id
       values:
         - name: Solid
           id: solid
         - name: Outline
           id: outline
+      value_key: id
+    comment: >-
+      Choose outline if you want lines to be filled with color and solid if you
+      want the whole image filled with color.
+    cascade: true
   icon_path:
     type: image
+    cascade: true
   variant:
     type: select
     options:
-      value_key: id
+      allow_empty: true
       values:
         - name: Primary
           id: primary
         - name: Secondary
           id: secondary
+      value_key: id
+    cascade: true
   arrangement:
     type: select
-    comment: The layout of the icon and text together.
     options:
-      value_key: id
+      allow_empty: true
       values:
         - name: Inline
           id: inline
         - name: Stacked
           id: stacked
+      value_key: id
+    comment: The layout of the icon and text together.
+    cascade: true
   image_alignment:
     type: choice
     options:
       allow_empty: false
-      value_key: id
       values:
         - name: Left
           id: left
@@ -150,72 +141,92 @@ _inputs:
         - name: Right
           id: right
           icon: align_horizontal_right
+      value_key: id
+    cascade: true
   layout:
     hidden: true
+    cascade: true
   eleventyExcludeFromCollections:
     hidden: true
+    cascade: true
   draft:
     type: switch
     comment: If this is switched on, this page will not appear on the live site.
+    cascade: true
   page_description:
     comment: If empty, defaults to the description set in the SEO data file.
+    cascade: true
   featured_image:
     comment: If empty, defaults to the image set in the SEO data file.
+    cascade: true
   nav_logo_image:
     comment: >-
       If an image is uploaded it will be used over a name set in the logo text
       field.
+    cascade: true
   logo_text:
     comment: >-
       If an image is set in the logo image field, this value will not be used.
       You can change the font of a text based logo in data/theme.
+    cascade: true
   footer_logo_image:
     comment: >-
       If an image is uploaded it will be used over a name set in the logo text
       field. Please note, the footer image has a fixed width size but not a
       fixed height.
+    cascade: true
   footer_content:
     type: markdown
     options:
-      link: true
-      bold: true
-      italic: true
-      undo: true
-      redo: true
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
       initial_height: 135
+      bold: true
+      image_size_attributes: true
+      italic: true
+      link: true
+      redo: true
+      undo: true
+    cascade: true
   font:
     comment: >-
       Write the name of any font from
       [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here.
+    cascade: true
   description:
     type: markdown
     options:
-      link: true
-      bold: true
-      italic: true
-      undo: true
-      redo: true
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
       initial_height: 135
+      bold: true
+      image_size_attributes: true
+      italic: true
+      link: true
+      redo: true
+      undo: true
+    cascade: true
   contact_details[*].text:
     type: markdown
     options:
-      link: true
-      bold: true
-      italic: true
-      undo: true
-      redo: true
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
       initial_height: 135
+      bold: true
+      image_size_attributes: true
+      italic: true
+      link: true
+      redo: true
+      undo: true
+    cascade: true
   content_alignment:
     type: choice
     options:
       allow_empty: false
-      value_key: id
-      preview:
-        text:
-          - key: name
-        icon:
-          - key: icon
       values:
         - name: Left
           id: left
@@ -223,102 +234,128 @@ _inputs:
         - name: Center
           id: center
           icon: format_align_center
-  color_group:
-    type: select
-    options:
-      allow_empty: false
       value_key: id
       preview:
         text:
           - key: name
         icon:
           - key: icon
+    cascade: true
+  color_group:
+    type: select
+    options:
+      allow_empty: false
       values: data.theme..[?(@.background_color)]
+      value_key: id
+      preview:
+        text:
+          - key: name
+        icon:
+          - key: icon
+    cascade: true
   card_color_group:
+    type: select
+    options:
+      allow_empty: true
+      values: data.theme..[?(@.background_color)]
+      preview:
+        text:
+          - key: name
+        icon:
+          - key: icon
     comment: >-
       Choose the color group for the cards in this grid. It is recommended to
       choose a color group different than that of the whole component.
-    type: select
-    options:
-      preview:
-        text:
-          - key: name
-        icon:
-          - key: icon
-      values: data.theme..[?(@.background_color)]
+    cascade: true
   group_name:
-    hidden: true
     comment: >-
       This input should be hidden from editors and passed through from the
       radio-group component so that these inputs function correctly.
+    hidden: true
+    cascade: true
   nav_color_group:
+    type: select
+    options:
+      allow_empty: true
+      values: data.theme..[?(@.background_color)]
+      preview:
+        text:
+          - key: name
+        icon:
+          - key: icon
     comment: Choose the color group for the navigation header.
-    type: select
-    options:
-      preview:
-        text:
-          - key: name
-        icon:
-          - key: icon
-      values: data.theme..[?(@.background_color)]
+    cascade: true
   footer_color_group:
-    comment: Choose the color group for the footer.
     type: select
     options:
+      allow_empty: true
+      values: data.theme..[?(@.background_color)]
       preview:
         text:
           - key: name
         icon:
           - key: icon
-      values: data.theme..[?(@.background_color)]
+    comment: Choose the color group for the footer.
+    cascade: true
   primary_color_group:
     comment: The default color group for styling site components.
+    cascade: true
   primary_color_group.name:
-    comment: Change the name of the default color group to easily identify it later.
     label: Group Name
+    comment: Change the name of the default color group to easily identify it later.
+    cascade: true
   primary_color_group.background_color:
     comment: The background color of site components.
+    cascade: true
   primary_color_group.foreground_color:
-    comment: The color of text, icons and borders.
     label: Text Color
+    comment: The color of text, icons and borders.
+    cascade: true
   primary_color_group.interaction_color:
     comment: >-
       The color for user interactions, for example focusing on text inputs or
       clicking buttons.
+    cascade: true
   custom_color_groups:
     comment: Define different color groups here to easily style site components.
+    cascade: true
   custom_color_groups[*].name:
-    comment: Give your color group a name to easily identify it later.
     label: Group Name
+    comment: Give your color group a name to easily identify it later.
+    cascade: true
   custom_color_groups[*].background_color:
     comment: The background color of site components.
+    cascade: true
   custom_color_groups[*].foreground_color:
-    comment: The color of text, icons and borders.
     label: Text Color
+    comment: The color of text, icons and borders.
+    cascade: true
   custom_color_groups[*].interaction_color:
     comment: >-
       The color for user interactions, for example focusing on text inputs or
       clicking buttons.
+    cascade: true
   id:
     comment: >-
       An optional unique identifier to link to this component (with page#id
       where id is what you set in this field).
+    cascade: true
   heading_font:
     comment: >-
       Write the name of any font from
       [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here.
+    cascade: true
   content_font:
     comment: >-
       Write the name of any font from
       [https://fonts.google.com/](https://fonts.google.com/) in data/fonts to
       access it here.
+    cascade: true
   hero_library_icon_name:
-    comment: >-
-      Visit [https://heroicons.com/](https://heroicons.com/) to see the full
-      library.
     type: select
     options:
+      allow_empty: true
       values:
         - academic-cap
         - adjustments-horizontal
@@ -612,18 +649,60 @@ _inputs:
         - wrench
         - x-circle
         - x-mark
-  hero:
     comment: >-
-      If a hero is not explicitly included, the default is to display the page
-      title.
+      Visit [https://heroicons.com/](https://heroicons.com/) to see the full
+      library.
+    cascade: true
+  hero:
     type: object
     options:
       structures: _structures.hero_blocks
+    comment: >-
+      If a hero is not explicitly included, the default is to display the page
+      title.
+    cascade: true
   show_note:
     type: switch
     comment: >-
       Hide/show the note that contains helpful information about the live
       editing of this component.
+    cascade: true
 _structures:
   content_blocks:
     style: modal
+file_config:
+  - glob: _data/site.yml
+    _inputs:
+      social_media_links:
+        type: array
+        options:
+          structures:
+            style: select
+            values:
+              - label: Social Media Link
+                icon: link
+                value:
+                  link_url:
+                  icon_path:
+                  label:
+                _inputs:
+                  icon_path:
+                    type: image
+                    options:
+                      accepts_mime_types:
+                        - image/svg+xml
+                    comment: >-
+                      This input is restricted to only allow images with type
+                      SVG
+                    cascade: true
+        cascade: true
+data_config:
+  fonts:
+    path: _data/fonts.yml
+  theme:
+    path: _data/theme.yml
+  site:
+    path: _data/site.yml
+  locales_fr:
+    path: rosey/locales/fr.json
+timezone: Etc/UTC
