@@ -15,6 +15,9 @@ const MarkdownIt = require("markdown-it"),
   });
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setLiquidOptions({
+    root: ["./src/_includes", "./src", "./component-library"],
+  });
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/uploads");
@@ -25,9 +28,9 @@ module.exports = function (eleventyConfig) {
 
   // Custom shortcodes
   eleventyConfig.addShortcode("image", image_shortcode);
-  
+
   eleventyConfig.addWatchTarget("component-library/");
-  
+
   // Plugins
   eleventyConfig.addPlugin(svgContents);
   eleventyConfig.addPlugin(pluginBookshop({
@@ -57,9 +60,9 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-      dir: {
-          input: "src",
-          output: "_site"
-      }
+    dir: {
+      input: "src",
+      output: "_site"
+    }
   }
 }
