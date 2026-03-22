@@ -21,6 +21,24 @@ collections_config:
     disable_add: true
     disable_add_folder: true
     disable_file_actions: true
+  locales:
+    path: rosey/locales
+    name: Locales
+    icon: translate
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+    _inputs:
+      value:
+        type: html
+        label: Translation
+        cascade: true
+      original:
+        hidden: true
+        cascade: true
+      _base_original:
+        disabled: true
+        cascade: true
 file_config:
   - glob: _data/site.yml
     _inputs:
@@ -49,6 +67,8 @@ data_config:
     path: _data/theme.yml
   site:
     path: _data/site.yml
+  locales_fr:
+    path: rosey/locales/fr.json
 _inputs:
   favicon:
     type: image

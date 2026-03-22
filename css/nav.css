@@ -7,7 +7,6 @@
   color: var(--main-text-color);
   width: 100%;
   z-index: 50;
-  /* Desktop view */
 }
 .c-navigation__contents {
   max-height: 100vh;
@@ -186,9 +185,6 @@
   transition: opacity 1s ease-out 0.2s;
   opacity: 1;
 }
-.c-navigation--open .c-navigation__burger-menu__burger {
-  background-color: transparent;
-}
 .c-navigation--open .c-navigation__burger-menu__burger::before {
   transform: rotate(45deg);
   background-color: var(--main-text-color);
@@ -199,12 +195,18 @@
   background-color: var(--main-text-color);
   top: 0;
 }
+.c-navigation--open .c-navigation__burger-menu__burger {
+  background-color: transparent;
+}
 .c-navigation--open .c-navigation__social-icons--overflow {
   overflow: visible;
 }
 .c-navigation__placeholder {
   height: var(--nav-height);
   display: block;
+}
+.c-navigation {
+  /* Desktop view */
 }
 @media screen and (min-width: 769px) {
   .c-navigation {
