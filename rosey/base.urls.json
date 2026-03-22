@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "keys": {
+    "404/index.html": {
+      "original": "404/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "booking/index.html": {
+      "original": "booking/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "contact/index.html": {
+      "original": "contact/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "index.html": {
+      "original": "index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "terms-and-conditions/index.html": {
+      "original": "terms-and-conditions/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    }
+  }
+}
