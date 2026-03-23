@@ -8,4 +8,4 @@ npx rosey build --source _untranslated_site --dest _site --default-language-at-r
 cp -r _untranslated_site/_rcc _site/_rcc
 # mkdir _site/_cloudcannon
 # echo "{}" > _site/_cloudcannon/info.json
-# npx @bookshop/generate
+npx @bookshop/generate
