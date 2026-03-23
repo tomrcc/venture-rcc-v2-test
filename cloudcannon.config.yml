@@ -33,9 +33,7 @@ collections_config:
     path: rosey/locales
     name: Locales
     icon: translate
-    disable_add: true
-    disable_add_folder: true
-    disable_file_actions: true
+    disable_url: false
     _inputs:
       value:
         type: html
@@ -45,8 +43,19 @@ collections_config:
         hidden: true
         cascade: true
       _base_original:
-        disabled: true
         cascade: true
+        hidden: false
+        label: Translated Text
+        disabled: true
+      $.[*]:
+        type: object
+        comment: Configggg
+        options:
+          preview:
+            icon: translate
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
 _inputs:
   favicon:
     type: image
