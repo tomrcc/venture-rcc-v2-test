@@ -32,7 +32,7 @@ Before touching code, understand what needs to be translated.
 
 ## Phase 2: Install Dependencies
 
-**Fastest path (recommended for agents):** Run the setup wizard in non-interactive mode. It handles installation, postbuild creation, `rosey.yml`, and CloudCannon config in one command with no prompts:
+**Fastest path (recommended for agents):** Run the setup wizard in non-interactive mode. It handles installation, postbuild creation, and CloudCannon config in one command with no prompts:
 
 ```bash
 npx rosey-cloudcannon-connector init --yes --locales fr,de
@@ -163,16 +163,14 @@ Replace or update `.cloudcannon/postbuild` with the Rosey pipeline. Adjust `--so
 npx rosey generate --source dist
 npx rosey-cloudcannon-connector write-locales --source rosey --dest dist
 mv ./dist ./_untranslated_site
-npx rosey build --source _untranslated_site --dest dist --default-language-at-root
-cp -r _untranslated_site/_rcc dist/_rcc
+npx rosey build --source _untranslated_site --dest dist --default-language en --default-language-at-root --exclusions "\.(html?)$"
 ```
 
 This script:
 1. Generates `rosey/base.json` from the built HTML
 2. Creates/updates locale JSON files (preserving existing translations, removing stale keys) and writes the locale manifest to `dist/_rcc/locales.json`
 3. Moves the original build aside
-4. Rebuilds the site with Rosey translations injected
-5. Copies `_rcc/locales.json` back into `dist/` (Rosey excludes `_`-prefixed directories from its output, but the RCC client needs this file at runtime)
+4. Rebuilds the site with Rosey translations injected; the `--exclusions` override lets JSON files (like `_rcc/locales.json` and `_cloudcannon/info.json`) flow through instead of being excluded by Rosey's default regex
 
 ### 5c. (Optional) Expose locales as a browsable collection
 
@@ -226,8 +224,7 @@ This makes locale files browsable in the CloudCannon sidebar. The `_inputs` conf
 6. **Test the full pipeline:**
    ```bash
    mv ./dist ./_untranslated_site
-   npx rosey build --source _untranslated_site --dest dist --default-language-at-root
-   cp -r _untranslated_site/_rcc dist/_rcc
+   npx rosey build --source _untranslated_site --dest dist --default-language en --default-language-at-root --exclusions "\.(html?)$"
    ```
    Verify the translated site output in `dist/` and confirm `dist/_rcc/locales.json` exists.
 
@@ -319,7 +316,7 @@ See the "Visitor-Facing Locale Picker" section in `rosey-multilingual-context.md
 - **Nav/footer use `data-rosey-ns`, not `data-rosey-root`.** Navigation and footer sit outside `<main>` and have no `data-rosey-root` ancestor. Use `data-rosey-ns="nav"` / `data-rosey-ns="footer"` for organization. Rosey deduplicates identical keys across pages automatically, so no root is needed.
 - **Slug derivation via `Astro.url.pathname`.** Rather than threading a slug prop through the layout chain, use `Astro.url.pathname.replace(/^\/|\/$/g, '') || 'index'` directly in the component that renders `<main>`. Works for any page type and keeps changes self-contained.
 - **Array items within blocks need nested `data-rosey-ns`.** For repeating items (testimonials, team members, FAQ, pricing features, etc.), add `data-rosey-ns={String(i)}` on each array item wrapper. This produces keys like `index:global-testimonial-2:0:author` and prevents collisions within the same block.
-- **Rosey excludes `_rcc/` from its build output.** The `write-locales --dest` command writes `_rcc/locales.json` into the build dir, but `rosey build` does not carry files prefixed with `_` into its output. The postbuild script must copy the `_rcc/` directory back after the Rosey build: `cp -r _untranslated_site/_rcc dist/_rcc`.
+- **Rosey's default exclusions block JSON files.** Rosey's default `--exclusions` regex (`\.(html?|json)$`) prevents JSON files from being copied through the build as assets. The postbuild `rosey build` command should include `--exclusions "\.(html?)$"` to let JSON files like `_rcc/locales.json` and `_cloudcannon/info.json` flow through to the final output.
 - **Don't translate names.** Props that represent proper nouns — author names, person names, designations/titles — should **not** get `data-rosey` attributes. These are not translatable text; they're identity values that stay the same across locales.
 - **Blog body content: put `data-rosey` on `<editable-text>`, not the wrapper.** For rich-text body content (e.g., `<editable-text data-prop="@content">`), place `data-rosey` directly on the `<editable-text>` element. Putting it on a parent `<div>` causes Rosey to capture the `<editable-text>` wrapper tags as part of the original, which corrupts the translation.
 - **Auto-derive `data-rosey` from `data-prop` in reusable building blocks.** For component-heavy sites, modify core building blocks (Heading, Text, SimpleText, Button, ListItem, Testimonial) to automatically derive `data-rosey` from the existing `data-prop` value. Pattern: `const roseyProp = Astro.props["data-rosey"]; const effectiveDataRosey = roseyProp === false ? null : (roseyProp ?? effectiveDataProp ?? null);` then spread `roseyAttributes` on the inner text element. This avoids manually tagging every component instance across all pages.

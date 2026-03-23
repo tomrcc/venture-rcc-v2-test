@@ -140,11 +140,10 @@ The `.cloudcannon/postbuild` script runs Rosey after each CloudCannon build:
 npx rosey generate --source dist
 npx rosey-cloudcannon-connector write-locales --source rosey --dest dist
 mv ./dist ./_untranslated_site
-npx rosey build --source _untranslated_site --dest dist --default-language-at-root
-cp -r _untranslated_site/_rcc dist/_rcc
+npx rosey build --source _untranslated_site --dest dist --default-language en --default-language-at-root --exclusions "\.(html?)$"
 ```
 
-> **Note:** The final `cp` is required because Rosey excludes `_`-prefixed directories from its build output. The RCC client fetches `/_rcc/locales.json` at runtime for locale discovery, so it must be present in the final `dist/`.
+> **Note:** The `--exclusions` flag overrides Rosey's default (`\.(html?|json)$`) so that JSON files like `_rcc/locales.json` and `_cloudcannon/info.json` flow through the build as assets. Without it, those files are excluded and the RCC locale switcher won't appear.
 
 ## write-locales CLI
 
@@ -190,9 +189,8 @@ The wizard (both modes):
 1. Detects existing project context (CC config, build dir, package manager, installed packages)
 2. Installs `rosey` and `rosey-cloudcannon-connector` (skips if already installed)
 3. Creates or appends to `.cloudcannon/postbuild` with the Rosey pipeline
-4. Creates `rosey.yml` with `source` and `default_language`
-5. Updates `cloudcannon.config.yml` with `data_config` entries (and optionally `collections_config` for a browsable locales collection)
-6. Prints follow-up instructions (sync paths, `<html lang>`, `data-rosey` tagging, RCC import)
+4. Updates `cloudcannon.config.yml` with `data_config` entries (and optionally `collections_config` for a browsable locales collection)
+5. Prints follow-up instructions (sync paths, `<html lang>`, `data-rosey` tagging, RCC import)
 
 ## Split-by-Directory for Body Content
 
