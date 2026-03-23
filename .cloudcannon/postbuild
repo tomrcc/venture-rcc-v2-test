@@ -1,3 +1,14 @@
+npx @bookshop/generate
+cd _site/
+echo "Contents of _site"
+ls
+cd _cloudcannon
+echo "Contents of _site/_cloudcannon"
+ls
+cd ..
+cd ..
+echo "Back in root, contents are:"
+ls
 
 # Rosey
 npx rosey generate --source _site
@@ -8,4 +19,3 @@ npx rosey build --source _untranslated_site --dest _site --default-language-at-r
 cp -r _untranslated_site/_rcc _site/_rcc
 # mkdir _site/_cloudcannon
 # echo "{}" > _site/_cloudcannon/info.json
-npx @bookshop/generate
