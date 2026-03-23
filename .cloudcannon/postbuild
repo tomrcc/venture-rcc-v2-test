@@ -5,7 +5,7 @@ npx rosey generate --source _site
 npx rosey-cloudcannon-connector write-locales --source rosey --dest _site --locales fr
 
 mv ./_site ./_untranslated_site
-npx rosey build --source _untranslated_site --dest _site --default-language-at-root --exclusions \.(html?)$
+npx rosey build --source _untranslated_site --dest _site --default-language-at-root --exclusions "\.(html?)$"
 # cp -r _untranslated_site/_rcc _site/_rcc
 # rm -rf _site/_cloudcannon
 # cp -r _untranslated_site/_cloudcannon _site/_cloudcannon
