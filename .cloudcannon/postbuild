@@ -1,3 +1,5 @@
+npx @bookshop/generate
+
 # Rosey
 npx rosey generate --source _site
 npx rosey-cloudcannon-connector write-locales --source rosey --dest _site --locales fr
@@ -5,5 +7,4 @@ npx rosey-cloudcannon-connector write-locales --source rosey --dest _site --loca
 mv ./_site ./_untranslated_site
 npx rosey build --source _untranslated_site --dest _site --default-language-at-root
 cp -r _untranslated_site/_rcc _site/_rcc
-
-npx @bookshop/generate
+cp -r _cloudcannon/ _site/_cloudcannon
