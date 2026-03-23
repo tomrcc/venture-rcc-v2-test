@@ -47,12 +47,6 @@ collections_config:
         hidden: false
         label: Translated Text
         disabled: true
-      $.[*]:
-        type: object
-        comment: Configggg
-        options:
-          preview:
-            icon: translate
     disable_add: true
     disable_add_folder: true
     disable_file_actions: true
