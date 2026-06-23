@@ -31,7 +31,8 @@
     {% endif %}
     {% assign imagery = imagery | ymlify %}
     {% capture card %}
-        - content:
+        - _uuid: {{ item._uuid }}
+          content:
             id: {{ content.id }}
             imagery: {{ imagery | json }}
             heading: 

@@ -17,7 +17,7 @@
     {% if content.grid_items %}
       <div class="{{c}}__grid">
         {% for item in content.grid_items %}
-          <div data-rosey-ns="{{ forloop.index0 }}">
+          <div data-rosey-ns="{{ item._uuid }}">
             {% bookshop "generic/card" bind:item card_color_group:styles.card_color_group %}
           </div>
         {% endfor %}

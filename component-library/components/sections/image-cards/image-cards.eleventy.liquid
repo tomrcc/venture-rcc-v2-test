@@ -19,7 +19,8 @@
     {% endcapture %}
     {% assign image = image | ymlify %}
     {% capture card %}
-        - content:
+        - _uuid: {{ item._uuid }}
+          content:
             id: {{ content.id }}
             imagery: {{ image | json }}
             heading: 
