@@ -4,8 +4,7 @@
         # The bind parameter here passes the inner fields of block to the component.
         # Imagine it like the ...spread operator in JavaScript.
     {% endcomment %}
-    {% assign block_ns = block._bookshop_name | split: "/" | last | append: "-" | append: forloop.index0 %}
-    <div data-rosey-ns="{{ block_ns }}">
+    <div data-rosey-ns="{{ block._uuid }}">
         {% bookshop "{{block._bookshop_name}}" bind: block %}
     </div>
 {% endfor %}

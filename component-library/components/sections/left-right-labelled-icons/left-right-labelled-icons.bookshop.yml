@@ -76,10 +76,14 @@ _structures:
     values:
       - label: Hero Library Icon
         value:
+          _uuid:
           hero_library_icon_name: academic-cap
           icon_type:
           icon_text:
         _inputs:
+          _uuid:
+            hidden: true
+            instance_value: UUID
           icon_type:
             comment: Choose outline if you want lines to be filled with color and solid if you want the whole image filled with color
             type: choice
@@ -90,10 +94,14 @@ _structures:
                 - outline
       - label: Custom Icon
         value:
+          _uuid:
           icon_path:
           icon_type:
           icon_text:
         _inputs:
+          _uuid:
+            hidden: true
+            instance_value: UUID
           icon_type:
             comment: Choose outline if you want lines to be filled with color and solid if you want the whole image filled with color
             type: choice

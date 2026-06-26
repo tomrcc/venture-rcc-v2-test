@@ -74,17 +74,26 @@ _structures:
     values:
       - label: List
         _inputs:
+          _uuid:
+            hidden: true
+            instance_value: UUID
           list_items:
             type: array
             options:
-              structures: 
+              structures:
                 values:
                   - label: List item
                     value:
+                      _uuid:
                       label: List item
                       detail: $
+                    _inputs:
+                      _uuid:
+                        hidden: true
+                        instance_value: UUID
         value:
+          _uuid:
           list_heading: List heading
-          list_items: 
+          list_items:
             - label: List item
               detail: $

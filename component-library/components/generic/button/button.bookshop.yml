@@ -8,6 +8,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  _uuid:
   url: "#"
   open_in_new_tab: false
   text: "Button text"
@@ -25,6 +26,9 @@ preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  _uuid:
+    hidden: true
+    instance_value: UUID
   onclick:
     hidden: true
   open_in_new_tab:

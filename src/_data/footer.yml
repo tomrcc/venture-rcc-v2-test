@@ -2,12 +2,15 @@ footer_logo_image: /assets/uploads/venture-logo.svg
 logo_text: Venture
 navigation_items:
   - label: Our Services
+    _uuid: 4be8f217-10a2-4902-b873-ed490f70b776
     link_url: /#services
     open_in_new_tab: false
   - label: Book Now
+    _uuid: d179c839-dc05-402c-9fc6-8371970ebdb5
     link_url: /booking
     open_in_new_tab: false
   - label: Contact Us
+    _uuid: a8486a31-c692-4718-8ace-bfc735368bd2
     link_url: /contact
     open_in_new_tab: false
 footer_content: >-

@@ -22,12 +22,12 @@
                 {% for navitem in footer.navigation_items %}
                     {% assign nav_item_with_slash = navitem.link_url | append: "/" %}
                     {% if page.url == navitem.link_url or page.url == nav_item_with_slash %}
-                        <li class="{{ c }}__navlist__item {{ c }}__navlist__item--active" aria-current="page">
-                            <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}" data-rosey="link-{{ forloop.index0 }}">{{ navitem.label }}</a>
+                        <li class="{{ c }}__navlist__item {{ c }}__navlist__item--active" aria-current="page" data-rosey-ns="{{ navitem._uuid }}">
+                            <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}" data-rosey="label">{{ navitem.label }}</a>
                         </li>
                     {% else %}
-                        <li class="{{ c }}__navlist__item">
-                            <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}" data-rosey="link-{{ forloop.index0 }}">{{ navitem.label }}</a>
+                        <li class="{{ c }}__navlist__item" data-rosey-ns="{{ navitem._uuid }}">
+                            <a class="{{ c }}__navlist__item__link" href="{{ navitem.link_url }}" data-rosey="label">{{ navitem.label }}</a>
                         </li>
                     {% endif %}
                 {% endfor %}

@@ -5,6 +5,7 @@
   {% if icon_data.hero_library_icon_name %}
     {% capture labelled-icon %}
       - _bookshop_name: generic/labelled-icon
+        _uuid: '{{ icon_data._uuid }}'
         arrangement: stacked
         text: '{{ icon_data.icon_text }}'
         icon:
@@ -19,6 +20,7 @@
   {% else %}
     {% capture labelled-icon %}
       - bookshop: generic/labelled-icon
+        _uuid: '{{ icon_data._uuid }}'
         arrangement: stacked
         text: {{ icon_data.icon_text }}
         icon:

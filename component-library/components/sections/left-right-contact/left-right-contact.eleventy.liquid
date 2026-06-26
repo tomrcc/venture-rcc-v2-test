@@ -10,6 +10,7 @@
 {% for detail in content.contact_details %}
   {% capture labelled-icon %}
     - _bookshop_name: generic/labelled-icon
+      _uuid: '{{ detail._uuid }}'
       arrangement: inline
       text: '{{ detail.text }}'
       icon:

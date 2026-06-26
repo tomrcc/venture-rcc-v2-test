@@ -2,12 +2,15 @@ nav_logo_image: /assets/uploads/venture-logo.svg
 logo_text: Venture
 navigation_items:
   - label: Our Services
+    _uuid: 9057b3c3-b695-4436-b759-33cc4ec54daa
     link_url: /#services
     open_in_new_tab: false
   - label: Book Now
+    _uuid: 01d87112-d9c9-477f-8f2f-e1cc471b61e3
     link_url: /booking
     open_in_new_tab: false
   - label: Contact Us
+    _uuid: f7a9bb5f-8d30-4e93-8f9e-8f18d0026cc5
     link_url: /contact
     open_in_new_tab: false
 nav_color_group: secondary0

@@ -27,7 +27,7 @@
     {% if content.buttons %}
       <div class="{{c}}__buttons">
         {% for button in content.buttons %}
-          <div data-rosey-ns="button-{{ forloop.index0 }}">
+          <div data-rosey-ns="{{ button._uuid }}">
             {% bookshop "generic/button" bind:button disabled:false arrow:button.arrow %}
           </div>
         {% endfor %}

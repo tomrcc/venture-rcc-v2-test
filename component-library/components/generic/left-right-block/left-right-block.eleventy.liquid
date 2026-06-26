@@ -26,7 +26,7 @@
       {% if icons %}
         <div class="{{ c }}__icons">
           {% for icon in icons %}
-            <div data-rosey-ns="icon-{{ forloop.index0 }}">
+            <div data-rosey-ns="{{ icon._uuid }}">
               {% bookshop "generic/labelled-icon" bind:icon %}
             </div>
           {% endfor %}
@@ -35,7 +35,7 @@
       {% if buttons and buttons.size > 0 %}
         <div class="{{ c }}__buttons">
           {% for button in buttons %}
-            <div data-rosey-ns="button-{{ forloop.index0 }}">
+            <div data-rosey-ns="{{ button._uuid }}">
               {% bookshop "generic/button" bind:button %}
             </div>
           {% endfor %}
