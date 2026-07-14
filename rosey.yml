@@ -1,0 +1,19 @@
+# Rosey config — the lowest-precedence layer.
+# Effective value = CLI flag  >  ROSEY_* env var  >  this file.
+#
+# This test site deliberately spreads Rosey settings across all three layers to
+# confirm the connector resolves and overrides them correctly:
+#   * baseline (everything)      ← this file
+#   * locales / languages        ← ROSEY_LANGUAGES env var   (.cloudcannon/postbuild)
+#   * connector roseyDir         ← --source CLI flag         (.cloudcannon/postbuild)
+#
+# Read by both `rosey` itself and the CloudCannon connector. Terminology note:
+# Rosey `source` = build dir (the connector's --dest), Rosey `locales` = the
+# locale-files directory, Rosey `languages` = the connector's --locales.
+source: _site
+locales: rosey/locales
+separator: ":"
+tag: data-rosey
+default_language: en
+languages:
+  - fr

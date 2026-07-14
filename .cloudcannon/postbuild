@@ -1,8 +1,14 @@
 npx @bookshop/generate
 
-# Rosey
-npx rosey generate --source _site
-npx rosey-cloudcannon-connector write-locales --source rosey --dest _site --locales fr
+# Rosey — settings resolve from three layers (CLI flag > env var > rosey.yml).
+#   rosey.yml    : baseline — source (=_site), locales dir, separator, tag,
+#                  default_language, languages ([fr])
+#   env var      : ROSEY_LANGUAGES overrides the config's `languages`
+#   CLI flag     : --source overrides the connector's Rosey (base.json) directory
+export ROSEY_LANGUAGES="[fr]"
+
+npx rosey generate
+npx rosey-cloudcannon-connector write-locales --source rosey
 
 mv ./_site ./_untranslated_site
 npx rosey build --source _untranslated_site --dest _site --default-language-at-root --exclusions "\.(html?)$"
